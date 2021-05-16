@@ -1,4 +1,4 @@
-class ClassicsController < ApplicationController
+class Api::ClassicsController < ApplicationController
   before_action :set_classic, only: [:show, :update, :destroy]
 
   # GET /classics

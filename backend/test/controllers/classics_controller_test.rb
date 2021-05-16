@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ClassicsControllerTest < ActionDispatch::IntegrationTest
+class Api::ClassicsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @classic = classics(:one)
   end
