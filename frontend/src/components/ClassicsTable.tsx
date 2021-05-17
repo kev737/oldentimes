@@ -1,7 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Table } from 'react-bootstrap'
+import API from '../helpers/client'
+
 
 const ClassicsTable = () => {
+    const [classics, setclassics] = useState({})
+    API.get('/api/classics').then((reply) => {
+        console.log(reply)
+    })
+
     return(
         <Table>
             <thead>
