@@ -84,6 +84,8 @@ const ClassicsTable = () => {
                 <Button onClick={(e) => 
                     {
                         postClassic(phrase, definition)
+                        setDefinition('')
+                        setPhrase('')
                         setModal(!modal)
                         setTriggerRerender(true)
                     }
